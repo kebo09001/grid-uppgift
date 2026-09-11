@@ -1,0 +1,53 @@
+html, body { height: 100%; margin: 0; padding: 0; }
+
+.container{
+    display: grid;
+    gap: 10px 30px;
+    grid-template-columns: 10px 1090px 400px 10px;
+    grid-template-rows: 120px 518px 130px;
+    grid-template-areas: 
+    "header header header header"
+    ". article article . "
+    "footer footer footer footer"
+}
+
+.gray{
+    background-color: gray;
+    font-size: 90px;
+    text-align: center;
+}
+.gray2{
+    background-color: gray;
+    font-size: 23px;
+}
+.link{
+    text-decoration: none;
+    color: yellow;
+}
+
+.Mario{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.blue{
+    background-color: blue;
+    grid-column: 3 / 4 ;
+}
+.cyan{
+    background-color: cyan;
+    grid-column: 2 / 3 ;
+    font-size: 29px;
+}
+
+header{
+    grid-area: header;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: footer;
+}
